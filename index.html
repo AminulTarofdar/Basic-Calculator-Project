@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Basic Calculator Project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+		<div class="wrapper">
+            <div class="container text-right">
+                <h1 class="header_text">Basic Calculator Project</h1>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form name="calculator">
+                            <p>
+                                <input name="result" class="result">
+                            </p>
+
+                            <div class="button_list">
+                                <button type="button" class="btn btn-success button" value="7" onclick="run7()">7</button>
+                                <button type="button" class="btn btn-success button" value="8" onclick="run8()">8</button>
+                                <button type="button" class="btn btn-success button" value="9" onclick="run9()">9</button>
+                                <button type="button" class="btn btn-danger button" value="c" onclick="runclear()">C</button>
+                            </div>
+                            <div class="button_list">
+                                <button type="button" class="btn btn-success button" value="4" onclick="run4()">4</button>
+                                <button type="button" class="btn btn-success button" value="5" onclick="run5()">5</button>
+                                <button type="button" class="btn btn-success button" value="6" onclick="run6()">6</button>
+
+                                <button type="button" class="btn btn-primary button" value="/" onclick="runDivision()">/</button>
+                            </div>
+                            <div class="button_list">
+                                <button type="button" class="btn btn-success button" value="1" onclick="run1()">1</button>
+                                <button type="button" class="btn btn-success button" value="2" onclick="run2()">2</button>
+                                <button type="button" class="btn btn-success button" value="3" onclick="run3()">3</button>
+
+                                <button type="button" class="btn btn-primary button" value="*" onclick="runMultiplication()">x</button>
+                            </div>
+                            <div class="button_list">
+                                <button type="button" class="btn btn-success button" value="0" onclick="run0()">0</button>
+                                <button type="button" class="btn btn-primary button" value="=" onclick="equal()">=</button>
+                                <button type="button" class="btn btn-primary button" value="+" onclick="runAddition()">+</button>
+                                <button type="button" class="btn btn-primary button" value="-" onclick="runSubtraction()">-</button>
+                                
+                            </div>
+                            <div>
+                                <p class="copy text-center">  &copy;  <a href="https://www.facebook.com/profile.php?id=100001213293047">AMINUL ISLAM</a>  CTG-003,ID:123</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>      
+        </div>
+
+
+
+        
+       	<script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
